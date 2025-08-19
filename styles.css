@@ -8,73 +8,82 @@
    Map each font weight/style to Open Sans
 ------------------------------------------------------- */
 
-
+/* Regular */
 @font-face {
   font-family: "Open Sans";
-  src: url("https://github.com/2a333a/Assignment-06/blob/main/Fonts/Open_Sans/OpenSans-Regular.ttf") format("truetype");
+  src: url("/Fonts/Open_Sans/OpenSans-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
+/* Italic */
 @font-face {
   font-family: "Open Sans";
-  src: url("https://github.com/2a333a/Assignment-06/blob/main/Fonts/Open_Sans/OpenSans-Italic.ttf") format("truetype");
+  src: url("/Fonts/Open_Sans/OpenSans-Italic.ttf") format("truetype");
   font-weight: 400;
   font-style: italic;
 }
 
+/* Light */
 @font-face {
   font-family: "Open Sans";
-  src: url("https://github.com/2a333a/Assignment-06/blob/main/Fonts/Open_Sans/OpenSans-Light.ttf") format("truetype");
+  src: url("/Fonts/Open_Sans/OpenSans-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 
+/* Light Italic */
 @font-face {
   font-family: "Open Sans";
-  src: url("https://github.com/2a333a/Assignment-06/blob/main/Fonts/Open_Sans/OpenSans-LightItalic.ttf") format("truetype");
+  src: url("/Fonts/Open_Sans/OpenSans-LightItalic.ttf") format("truetype");
   font-weight: 300;
   font-style: italic;
 }
 
+/* Medium */
 @font-face {
   font-family: "Open Sans";
-  src: url("https://github.com/2a333a/Assignment-06/blob/main/Fonts/Open_Sans/OpenSans-Medium.ttf") format("truetype");
+  src: url("/Fonts/Open_Sans/OpenSans-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 
+/* Medium Italic */
 @font-face {
   font-family: "Open Sans";
-  src: url("https://github.com/2a333a/Assignment-06/blob/main/Fonts/Open_Sans/OpenSans-MediumItalic.ttf") format("truetype");
+  src: url("/Fonts/Open_Sans/OpenSans-MediumItalic.ttf") format("truetype");
   font-weight: 500;
   font-style: italic;
 }
 
+/* SemiBold */
 @font-face {
   font-family: "Open Sans";
-  src: url("https://github.com/2a333a/Assignment-06/blob/main/Fonts/Open_Sans/OpenSans-SemiBold.ttf") format("truetype");
+  src: url("/Fonts/Open_Sans/OpenSans-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
 }
 
+/* SemiBold Italic */
 @font-face {
   font-family: "Open Sans";
-  src: url("https://github.com/2a333a/Assignment-06/blob/main/Fonts/Open_Sans/OpenSans-SemiBoldItalic.ttf") format("truetype");
+  src: url("/Fonts/Open_Sans/OpenSans-SemiBoldItalic.ttf") format("truetype");
   font-weight: 600;
   font-style: italic;
 }
 
+/* Bold */
 @font-face {
   font-family: "Open Sans";
-  src: url("https://github.com/2a333a/Assignment-06/blob/main/Fonts/Open_Sans/OpenSans-Bold.ttf") format("truetype");
+  src: url("/Fonts/Open_Sans/OpenSans-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 
+/* Bold Italic */
 @font-face {
   font-family: "Open Sans";
-  src: url("https://github.com/2a333a/Assignment-06/blob/main/Fonts/Open_Sans/OpenSans-BoldItalic.ttf") format("truetype");
+  src: url("/Fonts/Open_Sans/OpenSans-BoldItalic.ttf") format("truetype");
   font-weight: 700;
   font-style: italic;
 }
@@ -84,7 +93,7 @@
 ------------------------------------------------------- */
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-weight: 400; /* Regular */
   font-size: 12px;  /* Base body size */
   line-height: 1.6;
