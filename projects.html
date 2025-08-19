@@ -1,123 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Style sheet-->
-    <link rel="stylesheet" href="styles.css">
-    <title>Projects</title>
-
-
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
+<body>
 
-        <body>
-
-                 <!-- Navigation Menu-->
+  <!-- Site Header -->
+  <header>
     <nav>
+      <ul>
+        <li>
+          <a href="index.html">
+            <img src="SVG/mick-logo.svg" alt="Mick logo" width="85" height="85" />
+          </a>
+        </li>
+        <li><a href="index.html">Welcome</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-container">
+
+      <!-- Vertical label -->
+      <aside class="hero-side">
+        <div class="hero-subtitle">Creative Work 2025</div>
+      </aside>
+
+      <!-- Divider -->
+      <div class="hero-divider"></div>
+
+      <!-- Hero Text -->
+      <div class="hero-main">
+        <h1 class="hero-title">Projects</h1>
+        <p class="hero-name">Mickela van Huyssteen</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="content-container">
+
+    <!-- Introduction -->
+    <section class="intro">
+      <h1>
+        <img src="SVG/black-list-icon.svg" alt="Black heading icon" width="20" height="20" />
+        Projects
+      </h1>
+      <p>
+        Here you will find a selection of projects that highlight both design and development work. Each project includes the tools used, the design process, and the approach that shaped the final result. Scroll down to explore the workflows, software, and creative methods behind each piece.
+      </p>
+    </section>
+
+    <!-- Selected Works -->
+    <section class="works">
+      <h3>
+        <img src="SVG/black-list-icon.svg" alt="Black heading icon" width="15" height="15" />
+        Selected Works:
+      </h3>
+
+      <article class="project">
+        <h4>Project Overview:</h4>
+        <p>After Effects motion reel for a front-End Web development portfolio project published on Vimeo.</p>
+        <h5>Motion Reel: Front-End Web Development 2025</h5>
+
+        <!-- Video Embed -->
+        <div class="video-wrapper">
+          <iframe
+            title="Vimeo Player"
+            src="https://player.vimeo.com/video/1111352619?h=b1e9bf1c95&autoplay=0"
+            loading="lazy"
+            frameborder="0"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allow="fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <!-- Project Meta -->
+        <h3>
+          <img src="SVG/timeline-icon.svg" alt="timeline icon" width="64" height="64" />
+          Project Timeline:
+        </h3>
         <ul>
-            <li><a href="index.html"><img src="SVG/mick-logo.svg" alt="Mik logo" width="85" height="85"/></a></li>
-            <li><a href="index.html">Welcome</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
+          <li>Duration: 1 hour</li>
         </ul>
+
+        <h3>
+          <img src="SVG/deliverables-icon.svg" alt="deliverables icon" width="64" height="64" />
+          Deliverables:
+        </h3>
+        <ul>
+          <li>8 sec 2D logo animation</li>
+        </ul>
+
+        <h3>
+          <img src="SVG/tools-icon.svg" alt="tools icon" width="64" height="64" />
+          Tools used:
+        </h3>
+        <ul>
+          <li>Illustrator</li>
+          <li>After Effects</li>
+          <li>Premiere Pro</li>
+        </ul>
+      </article>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="index.html">Welcome</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </nav>
 
+    <p>
+      <a href="https://www.linkedin.com/in/mickela-van-huyssteen/">
+        <img src="SVG/linkedin-white-icon.svg" alt="LinkedIn Icon" width="24" height="24" />
+        Let's connect on LinkedIn
+      </a>
+    </p>
 
-    <!--Hero section-->
-            <p>Creative Work</p>
-            <p>2025</p>
-            <p>Projects</p>
-            <p>Mickela van Huyssteen</p>
+    <p>© 2025 Mick. All rights Reserved.</p>
+  </footer>
 
-
-<!--Content Introduction-->
-<!--Main heading-->
-            <h1><img src="SVG/black-list-icon.svg" alt="Black heading icon" width="20" height="20"/> Projects</h1>
-
-
-<!--Main content-->
-<p>Here you will find a selection of projects that highlight both design and development work. Each project includes the tools used, the design process, and the approach that shaped the final result. Scroll down to explore the workflows, software, and creative methods behind each piece.
-</p>
-
-<h3><img src="SVG/black-list-icon.svg" alt="Black heading icon" width="15" height="15"/> Selected Works:</h3>
-
-<h4>Project Overview:</h4>
-
-<p>After Effects motion reel for a front-End Web developement portfolio project published on Vimeo.</p>
-
-<h5>Motion Reel: Front-End Web Developement 2025</h5>
-
-<!--Video content-->
-
-<div class="video-wrapper">
-  <iframe
-    title="Vimeo Player"
-    src="https://player.vimeo.com/video/1111352619?h=b1e9bf1c95&autoplay=0"
-    loading="lazy"
-    frameborder="0"
-    referrerpolicy="strict-origin-when-cross-origin"
-    allow="fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-    allowfullscreen>
-  </iframe>
-</div>
-
-<style>
-  .video-wrapper {
-    position: relative;
-    width: 100%;
-    max-width: 800px;   /* desktop max */
-    min-width: 280px;   /* mobile min */
-    aspect-ratio: 16 / 9;
-    margin: 0 auto;     /* center on page */
-  }
-
-  .video-wrapper iframe {
-    width: 100%;
-    height: 100%;
-    border-radius: 12px; /* optional styling */
-  }
-</style>
-
-<!--Project destails content-->
-
-<h3><img src="SVG/timeline-icon.svg"alt="timeline icon" width="64" height="64"/> Project Timeline:</h3>
-
-<li>Duration: 1 hour</li>
-
-<h3><img src="SVG/deliverables-icon.svg"alt="deliverables icon" width="64" height="64"/> Deliverables:</h3>
-
-<li>8 sec 2d logo animation</li>
-
-<h3><img src="SVG/tools-icon.svg"alt="tools icon" width="64" height="64"/> Tools used:</h3>
-
-<ul>
-  <li>Illustrator</li>
-  <li>After Effects</li>
-  <li>Premiere Pro</li>
-</ul>
-
-<!--Footer and copyright area-->
-
-<!--Sitemap Navigation-->
-<nav>
-        <ul>
-            <li><a href="index.html">Welcome</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-
-<!--Call to action-->
-<p><a href="https://www.linkedin.com/in/mickela-van-huyssteen/"><img src="SVG/linkedin-white-icon.svg" alt="LinkedIn Icon" width="24" height="24"/>Let's connect on LinkedIn</a></p>
-
-<p>© 2025 Mick. All rights Reserved.</p>
-
-
-<!--Javascript link-->
-<script src="scripts.js"></script>
-
+  <!-- Scripts -->
+  <script src="scripts.js"></script>
 </body>
 </html>
