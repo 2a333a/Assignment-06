@@ -1,97 +1,86 @@
 /* -------------------------------------------------------------------------------
    TYPOGRAPHY STYLE GUIDE – Open Sans
-   Source: Local font files in /Fonts/Open_Sans/
+   Source: local TTFs in /Fonts/Open_Sans/
    Default text colour: #2a333a
 ------------------------------------------------------------------------------- */
-/* -------------------------------------------------------
-   FONT DECLARATIONS
-   Map each font weight/style to Open Sans
-------------------------------------------------------- */
-
-/* Regular */
-@font-face {
-  font-family: "Open Sans";
-  src: url("/Fonts/Open_Sans/OpenSans-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-
-/* Italic */
-@font-face {
-  font-family: "Open Sans";
-  src: url("/Fonts/Open_Sans/OpenSans-Italic.ttf") format("truetype");
-  font-weight: 400;
-  font-style: italic;
-}
-
-/* Light */
+/* FONT DECLARATIONS */
 @font-face {
   font-family: "Open Sans";
   src: url("/Fonts/Open_Sans/OpenSans-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
+  font-display: swap;
 }
-
-/* Light Italic */
 @font-face {
   font-family: "Open Sans";
   src: url("/Fonts/Open_Sans/OpenSans-LightItalic.ttf") format("truetype");
   font-weight: 300;
   font-style: italic;
+  font-display: swap;
 }
-
-/* Medium */
+@font-face {
+  font-family: "Open Sans";
+  src: url("/Fonts/Open_Sans/OpenSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("/Fonts/Open_Sans/OpenSans-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
 @font-face {
   font-family: "Open Sans";
   src: url("/Fonts/Open_Sans/OpenSans-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
 }
-
-/* Medium Italic */
 @font-face {
   font-family: "Open Sans";
   src: url("/Fonts/Open_Sans/OpenSans-MediumItalic.ttf") format("truetype");
   font-weight: 500;
   font-style: italic;
+  font-display: swap;
 }
-
-/* SemiBold */
 @font-face {
   font-family: "Open Sans";
   src: url("/Fonts/Open_Sans/OpenSans-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
+  font-display: swap;
 }
-
-/* SemiBold Italic */
 @font-face {
   font-family: "Open Sans";
   src: url("/Fonts/Open_Sans/OpenSans-SemiBoldItalic.ttf") format("truetype");
   font-weight: 600;
   font-style: italic;
+  font-display: swap;
 }
-
-/* Bold */
 @font-face {
   font-family: "Open Sans";
   src: url("/Fonts/Open_Sans/OpenSans-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
 }
-
-/* Bold Italic */
 @font-face {
   font-family: "Open Sans";
   src: url("/Fonts/Open_Sans/OpenSans-BoldItalic.ttf") format("truetype");
   font-weight: 700;
   font-style: italic;
+  font-display: swap;
 }
 
-/* -------------------------------------------------------
-   BASE TYPOGRAPHY - Mobile first
-------------------------------------------------------- */
-
+/* -------------------------------------------------------------------------------
+   BASE TYPOGRAPHY – Mobile first
+------------------------------------------------------------------------------- */
+html, body {
+  background-color: #fefefe;
+}
 body {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-weight: 400;
@@ -100,65 +89,50 @@ body {
   color: #2a333a;
 }
 
-/* ---------------------------------
-   Headings - Mobile
----------------------------------- */
+/* Headings – mobile */
+h1 { font-size: 22px; font-weight: 700; line-height: 1.3; }
+h2 { font-size: 18px; font-weight: 600; line-height: 1.35; }
+h3 { font-size: 16px; font-weight: 600; line-height: 1.4; }
+h4, h5, h6 { font-size: 14px; font-weight: 600; line-height: 1.4; }
 
-h1 {
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 1.3;
+/* Body copy – mobile */
+p, li, a, span { font-size: 12px; font-weight: 400; line-height: 1.6; }
+
+/* Default link styles */
+body a {
+  color: #2a333a;
+  text-decoration: underline;
+  transition: color 0.2s ease-in-out;
+}
+body a:hover,
+body a:focus {
+  color: #1075ff;
 }
 
-h2 {
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 1.35;
+/* Focus visible for a11y */
+a:focus-visible {
+  outline: 2px solid #1075ff;
+  outline-offset: 2px;
+  text-decoration: none;
 }
 
-h3 {
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 1.4;
-}
+/* -------------------------------------------------------------------------------
+   LAYOUT – Content container and dividers
+------------------------------------------------------------------------------- */
 
-h4, h5, h6 {
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1.4;
-}
-
-/* ---------------------------------
-   Body Copy - Mobile
----------------------------------- */
-
-p,
-li,
-a,
-span {
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 1.6;
-}
-
-/* ---------------------------------
-   Content Container + Dividers
----------------------------------- */
 
 .content-container {
   width: 100%;
-  max-width: 300px;  /* mobile default */
+  max-width: 300px; /* mobile default */
   margin: 0 auto;
   padding: 0 16px;
 }
-
 .content-container h1,
 .content-container h2 {
   position: relative;
   padding-bottom: 8px;
   margin-bottom: 24px;
 }
-
 .content-container h1::after,
 .content-container h2::after {
   content: "";
@@ -172,118 +146,96 @@ span {
 }
 
 /* -------------------------------------------------------------------------------
-   Tablet Breakpoint - 481px+
+   LAYOUT UTILITIES – grids for paired containers
 ------------------------------------------------------------------------------- */
+.two-col,
+.three-col {
+  display: grid;
+  gap: 2rem;
+}
+.two-col {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.three-col {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+.two-col article,
+.three-col article {
+  background: #fefefe;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
 
-@media (min-width: 481px) {
-  .content-container {
-    max-width: 500px;
-  }
-
-  h1 { font-size: 24px; }
-  h2 { font-size: 20px; }
-  p, li, a, span { font-size: 13px; }
+/* Icon rows used under section headings */
+.icon-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 14px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.icon-list img {
+  display: block;
 }
 
 /* -------------------------------------------------------------------------------
-   Desktop Overrides - 769px+
+   NAVIGATION
 ------------------------------------------------------------------------------- */
-
-@media (min-width: 769px) {
-  .content-container {
-    max-width: 800px;
-  }
-
-  h1 {
-    font-size: 28px;
-    line-height: 1.3;
-  }
-  h2 {
-    font-size: 22px;
-    line-height: 1.4;
-  }
-  h3 {
-    font-size: 16px;
-    line-height: 1.4;
-  }
-  h4, h5, h6 {
-    font-size: 14px;
-    line-height: 1.4;
-  }
-  /* body stays 12–13px, headings scale up */
-}
-
-/* -------------------------------------------------------------------------------
-   Navigation 
-------------------------------------------------------------------------------- */
-
 nav {
   padding: 10px 20px;
 }
-
 nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;            
-  align-items: center;      
+  display: flex;
+  align-items: center;
   justify-content: flex-start;
+  gap: 20px;
 }
-
-nav li {
-  margin-right: 20px; 
-}
-
+nav li { margin: 0; }
 nav a {
   text-decoration: none;
-  color: #2a333a;         
+  color: #2a333a;
   font-weight: 600;
   font-size: 14px;
   transition: color 0.2s ease-in-out;
 }
-
-nav a:hover {
-  color: #1075ff;         
-}
-
+nav a:hover { color: #1075ff; }
 nav img {
   display: block;
-  height: 60px;  
-  width: auto;   
+  height: 60px;
+  width: auto;
 }
-
 @media (min-width: 769px) {
   nav img { height: 85px; }
 }
 
-/* ------------------------------
-   Hero Section
------------------------------- */
-
+/* -------------------------------------------------------------------------------
+   HERO SECTION
+------------------------------------------------------------------------------- */
 .hero {
   background-color: #2a333a;
   color: #fefefe;
   min-height: 60vh;
   display: flex;
-  align-items: center;  
+  align-items: center;
 }
-
 .hero-container {
   display: flex;
-  flex-direction: row;     
-  align-items: center;     
+  flex-direction: row;
+  align-items: center;
   justify-content: flex-start;
-  gap: 2rem;               
-  margin-left: 100px;      
+  gap: 2rem;
+  margin-left: 100px;
 }
-
+.hero-side,
 .hero-vertical {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 80px;
 }
-
 .hero-subtitle,
 .hero-year {
   writing-mode: vertical-rl;
@@ -292,82 +244,48 @@ nav img {
   color: #fefefe;
   margin: 0;
 }
-
-.hero-subtitle {
-  font-size: 11px;
-  font-weight: 700;
-}
-
-.hero-year {
-  font-size: 16px;
-  font-weight: 700;
-}
-
+.hero-subtitle { font-size: 11px; font-weight: 700; }
+.hero-year { font-size: 16px; font-weight: 700; }
 .hero-divider {
   width: 2px;
   background-color: #fefefe;
-  align-self: stretch;     
+  align-self: stretch;
 }
-
 .hero-main {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
 .hero-title {
   font-size: 36px;
   font-weight: 700;
   margin: 0 0 1rem 0;
 }
-
 .hero-name {
   font-size: 16px;
   font-weight: 300;
   margin: 0;
 }
 
-@media (min-width: 769px) {
-  .hero-subtitle { font-size: 14px; }
-  .hero-year { font-size: 20px; }
-  .hero-title { font-size: 48px; }
-  .hero-name { font-size: 26px; }
-}
-
 /* -------------------------------------------------------------------------------
-   Video Wrapper
+   VIDEO WRAPPER
 ------------------------------------------------------------------------------- */
-
 .video-wrapper {
   position: relative;
   width: 100%;
-  max-width: 600px;   /* desktop cap */
+  max-width: 600px;
   aspect-ratio: 16 / 9;
-  margin: 0 auto;     /* center on page */
+  margin: 0 auto;
 }
-   Background
-------------------------------------------------------------------------------- */
-
-.video-wrapper {
-  position: relative;
-  width: 100%;
-  max-width: 600px;   /* desktop cap */
-  aspect-ratio: 16 / 9;
-  margin: 0 auto;     /* center on page */
-}
-
 .video-wrapper iframe {
   width: 100%;
   height: 100%;
-  border-radius: 12px; /* optional styling */
+  border-radius: 12px;
 }
 
-
 /* -------------------------------------------------------------------------------
-   Remove contact page bullets
+   PAGE-SPECIFIC CLEANUPS
 ------------------------------------------------------------------------------- */
-
-
 body.contact-page ul,
 body.contact-page ol {
   list-style: none;
@@ -375,27 +293,132 @@ body.contact-page ol {
   padding: 0;
 }
 
-
-
 /* -------------------------------------------------------------------------------
-   Background
+   PROFESSIONAL PRESENCE (body section, not footer)
 ------------------------------------------------------------------------------- */
+.professional-presence {
+  background: #fefefe;
+  padding: 3rem 2rem;
+}
+.professional-presence-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+.professional-presence-column h3 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+.professional-presence-column ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.professional-presence-column li {
+  margin-bottom: 0.75rem;
+}
+.professional-presence-column a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: #2a333a;
+  font-size: 0.95rem;
+}
+.professional-presence-column a:hover {
+  text-decoration: underline;
+}
 
-html,
-body {
-  background-color: #fefefe;
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .professional-presence {
+    padding: 2rem 1rem;
+  }
+  .professional-presence-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 480px) {
+  .professional-presence-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* -------------------------------------------------------------------------------
-   Footer
+   FOOTER
 ------------------------------------------------------------------------------- */
-
 footer {
-  background-color: #2a333a; 
-  padding: 40px;            
-  margin-top: 40px;
+  width: 100%;                  /* full width across viewport */
+  max-width: none !important;   /* override container caps */
+  margin: 0;                    /* no inherited margins */
+  padding: 40px 20px;           /* spacing inside */
+  background-color: #2a333a;    /* dark background */
+  color: #fefefe;
+  text-align: center;
+}
+
+footer nav {
+  margin-bottom: 20px;
+}
+
+footer nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;      /* centre links horizontally */
+  flex-wrap: wrap;              /* allow wrapping on smaller screens */
+  gap: 2rem;
+}
+
+footer nav a {
+  color: #fefefe;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease-in-out;
+}
+
+footer nav a:hover,
+footer nav a:focus {
+  text-decoration: underline;
+  color: #1075ff;                  /* stays readable */
+}
+
+footer p {
+  margin: 8px 0;
+  font-size: 0.9rem;
+  line-height: 1.4;
 }
 
 footer a {
-  color: #fefefe;        
+  color: #fefefe;
+  text-decoration: none; /* optional if you don’t want underline */
+}
+
+footer a:hover,
+footer a:focus {
+  color: #1075ff; /* softer grey on hover for accessibility */
+  text-decoration: underline; /* keeps it clear it's a link */
+}
+
+/* -------------------------------------------------------------------------------
+   RESPONSIVE TYPOGRAPHY
+------------------------------------------------------------------------------- */
+@media (min-width: 481px) {
+  .content-container { max-width: 500px; }
+  h1 { font-size: 24px; }
+  h2 { font-size: 20px; }
+  p, li, a, span { font-size: 13px; }
+}
+@media (min-width: 769px) {
+  .content-container { max-width: 800px; }
+  .hero-subtitle { font-size: 14px; }
+  .hero-year { font-size: 20px; }
+  .hero-title { font-size: 48px; }
+  .hero-name { font-size: 26px; }
+  h1 { font-size: 28px; line-height: 1.3; }
+  h2 { font-size: 22px; line-height: 1.4; }
+  h3 { font-size: 16px; line-height: 1.4; }
+  h4, h5, h6 { font-size: 14px; line-height: 1.4; }
 }
