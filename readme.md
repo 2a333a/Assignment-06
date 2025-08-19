@@ -7,6 +7,15 @@ All personal details below are placeholders and should be replaced with your own
 
 ---
 
+# Portfolio Website
+
+A clean and minimal portfolio website built to showcase **front-end web development** and **multimedia design** skills.  
+The site includes three main pages: **Welcome**, **Projects**, and **Contact**.  
+
+All personal details below are placeholders and should be replaced with your own.
+
+---
+
 ## Project Overview
 
 This project serves as a digital CV and portfolio, highlighting both **technical development** and **creative design** work.  
@@ -76,6 +85,11 @@ The extended palette ensures flexibility for both **UI elements** and **multimed
 
 ---
 
+## Contact Form
+
+The **Contact Page** includes a functional form built with **HTML, CSS, and JavaScript**.  
+EmailJS is used to handle form submissions and forward messages directly to your inbox.
+
 ## Folder Structure
 
 ```plaintext
@@ -87,3 +101,9 @@ The extended palette ensures flexibility for both **UI elements** and **multimed
 ├── scripts.js        # Optional interactivity
 ├── SVG/              # All icons, logos, and illustrations
 └── Fonts/            # Open Sans font files
+
+***Notes
+
+Form Functionality: The contact form relies on EmailJS, which removes the need for server-side scripting. This is ideal for static hosting but requires setting up an account.
+
+Security: Never expose private keys in public repositories. Use only the EmailJS public key in the client-side script.
