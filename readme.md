@@ -1,3 +1,5 @@
+![Cover Image Assignment 6](Images/GitHub-Assignment-06.jpg)
+
 # Portfolio Website
 
 A clean and minimal portfolio website built to showcase **front-end web development** and **multimedia design** skills.  
