@@ -174,3 +174,83 @@ span {
   /* Body text remains at 12px on desktop */
 }
 
+
+
+/* -------------------------------------------------------------------------------
+   Navigation 
+------------------------------------------------------------------------------- */
+
+/* Navigation Container */
+nav {
+  padding: 10px 20px;
+}
+
+/* Remove default list styling */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;            
+  align-items: center;      
+  justify-content: flex-start;
+}
+
+/* List Items */
+nav li {
+  margin-right: 20px; 
+}
+
+/* Links */
+nav a {
+  text-decoration: none;
+  color: #2a333a;         
+  font-weight: 600;
+  font-size: 14px;
+  transition: color 0.2s ease-in-out;
+}
+
+nav a:hover {
+  color: #1075ff;         
+}
+
+/* Logo Image*/
+nav img {
+  display: block;
+  height: 60px;  
+  width: auto;   
+}
+
+/* Desktop override */
+@media (min-width: 769px) {
+  nav img {
+    height: 85px;  
+  }
+
+}
+
+/* -------------------------------------------------------------------------------
+   Background - #fefefe
+------------------------------------------------------------------------------- */
+
+/* Background Colour */
+
+html,
+body {
+  background-color: #fefefe;
+}
+
+
+/* -------------------------------------------------------------------------------
+   Footer Background - #2a333a
+------------------------------------------------------------------------------- */
+
+footer {
+  background-color: #2a333a; 
+  padding: 40px;            
+  margin-top: 40px;
+ }
+
+ footer a {
+  color: #fefefe;        
+}
